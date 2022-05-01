@@ -727,8 +727,8 @@ static void make_duplis_font(const DupliContext *ctx)
     }
 
     if (ob) {
-      vec[0] = fsize * (ct->xof - xof);
-      vec[1] = fsize * (ct->yof - yof);
+      vec[0] = fsize * (ct->xof);
+      vec[1] = fsize * (ct->yof);
       vec[2] = 0.0;
 
       mul_m4_v3(pmat, vec);
